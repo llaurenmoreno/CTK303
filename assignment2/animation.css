@@ -21,7 +21,7 @@ h1 {
 }
 
 h2{
-    font-family: 'MinecraftiaRegular';
+    font-family: 'Minecraftia', sans-serif;
     font-weight:normal;
     display: inline-block;
     position: absolute; 
@@ -115,4 +115,5 @@ img {
 #tame:checked ~ #wrapper .bottomtxt {
     opacity:1;
 }
+
 
