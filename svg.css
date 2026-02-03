@@ -1,0 +1,113 @@
+.st0 {
+    fill: #5e4139;
+}
+
+.st0, .st1, .st2, .st3, .st4, .st5 {
+    stroke-miterlimit: 10;
+}
+
+.st0, .st3, .st4, .st5 {
+    stroke: #000;
+    stroke-dasharray: 0 0 0 0 0 0;
+}
+
+.st6 {
+    fill: #bd66a8;
+}
+
+.st7 {
+    fill: #c9c9c9;
+}
+
+.st8 {
+    fill: #fff;
+}
+
+.st9 {
+    fill: #29abe2;
+}
+
+.st1 {
+    fill: #943b1b;
+}
+
+.st1, .st2 {
+    stroke: #d9e021;
+}
+
+.st10 {
+    fill: #9e005d;
+}
+
+.st11 {
+    fill: #8cc63f;
+}
+
+.st2 {
+    fill: #f15a24;
+}
+
+.st3 {
+    fill: #608037;
+}
+
+.st4 {
+    fill: #4d441e;
+}
+
+.st12 {
+    fill: #d9e021;
+}
+
+.st13 {
+    fill: #80b53a;
+}
+
+.st5 {
+    fill: #dede43;
+}
+
+#sky:hover {
+    fill:#000;
+}
+
+#clouds {
+  animation: drift 60s linear infinite;
+}
+
+@keyframes drift {
+  from {
+    transform: translateX(-200px);
+  }
+  to {
+    transform: translateX(200px);
+  }
+}
+
+#petals, #innerflower, #stems {
+  transform-box: fill-box;
+  transform-origin: bottom center;
+  animation:
+    popUp 0.8s ease-out forwards,
+    sway 3s ease-in-out infinite;
+  animation-delay: 0s, 0.8s;
+}
+
+@keyframes popUp {
+  from {
+    transform: scaleY(0);
+    opacity: 0;
+  }
+  to {
+    transform: scaleY(1);
+    opacity: 1;
+  }
+}
+
+@keyframes sway {
+  0%   { transform: rotate(0deg); }
+  25%  { transform: rotate(2deg); }
+  50%  { transform: rotate(0deg); }
+  75%  { transform: rotate(-2deg); }
+  100% { transform: rotate(0deg); }
+}
