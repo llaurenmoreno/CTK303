@@ -30,7 +30,7 @@ function setup() {
   spawnBones();
 
   // replay button
-  replayButton = createButton("Replay?");
+  replayButton = createButton("replay?");
   replayButton.position(width / 2 - 40, height / 2 + 60);
   replayButton.hide();
 
@@ -90,3 +90,4 @@ function draw() {
     noLoop();
   }
 }
+
