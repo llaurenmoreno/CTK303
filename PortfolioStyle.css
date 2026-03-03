@@ -151,7 +151,8 @@ h3 {
 }
 
 .hidden {
-  display:none;
+  position: absolute;
+  left: -9999px;
 }
 
 
@@ -294,3 +295,4 @@ footer {
 .textshadowbox {
   text-shadow: 2px 2px 2px #000;
 }
+
