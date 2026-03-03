@@ -1,0 +1,296 @@
+/* --------------------------------------------------
+  GLOBAL STYLES
+-------------------------------------------------- */
+body {
+  background-color: #D2EFCC;
+}
+
+#wrapper {
+  margin: 24px auto;
+  width: 1200px;
+  border: 1px dashed #8e6e87;
+  padding: 24px;
+  background-color: #D2EFCC;
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+  grid-column-gap: 24px;
+}
+
+
+/* --------------------------------------------------
+  NAVIGATION
+-------------------------------------------------- */
+nav {
+  grid-column: span 12;
+  text-align: right;
+}
+
+nav ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+nav li {
+  display: inline-block;
+  width: 160px;
+  margin-right: 20px;
+  margin-bottom: 20px;
+  padding: 0;
+}
+
+nav li a {
+  display: block;
+  padding: 15px;
+  text-align: center;
+  text-decoration: none;
+  color: #EAFBEA;
+  background-color: #4A3F50;
+  border-radius: 10px;
+
+  font-size: 25px;
+  font-family: "Zalando Sans SemiExpanded", sans-serif;
+
+  transition: background-color 0.5s, border-radius 0.5s;
+}
+
+nav li a:hover {
+  background-color: #5C3E6F;
+  border-radius: 20px;
+}
+
+.active {
+  background-color: #5C3E6F;
+}
+
+
+/* --------------------------------------------------
+  HEADER
+-------------------------------------------------- */
+header {
+  grid-column: span 12;
+  text-align: center;
+  font-weight: 100;
+}
+
+
+/* --------------------------------------------------
+  MAIN LAYOUTS
+-------------------------------------------------- */
+main {
+  grid-column: span 12;
+  text-align: center;
+  width: 500px;
+  margin: 0 auto;
+}
+
+main.about {
+  width:100%;
+  grid-column: span 12;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 40px;
+}
+
+main.contact{
+  grid-column:span 12;
+  text-align:center;
+  width:100%;
+}
+
+
+/* --------------------------------------------------
+  TYPOGRAPHY/OTHER STUFF LOL
+-------------------------------------------------- */
+h1 {
+  font-family: "Zalando Sans SemiExpanded", sans-serif;
+  font-size: 80px;
+  font-weight: normal;
+  color: #7A3E6E;
+  margin-bottom: 0;
+}
+
+.contacth{
+  margin-bottom:50px;
+}
+
+
+h2 {
+  font-size: 50px;
+  color: #362183;
+  font-weight: lighter;
+  margin-top: 100px;
+  margin-bottom: 0;
+  font-family: "Zalando Sans SemiExpanded", sans-serif;
+}
+
+.click{
+  font-style:italic;
+  opacity:70%;
+}
+
+h3 {
+  font-size: 22px;
+  color: #362183;
+  font-weight: normal;
+  font-family: "Zalando Sans SemiExpanded", sans-serif;
+}
+
+
+#intro {
+  color: #7A3E6E;
+  font-size: 30px;
+  font-weight: bold;
+}
+
+
+#section {
+  margin-top: 100px;
+  text-align: justify;
+  color: #362183;
+}
+
+.hidden {
+  display:none;
+}
+
+
+/* --------------------------------------------------
+  FORM
+-------------------------------------------------- */
+
+
+input{
+  background-color:white;
+  width:70%;
+  font-size:20px;
+  padding:16px 16px;
+  border-radius: 10px;
+  border: 2px solid #927DDE;
+  margin-bottom: 20px;
+  font-family: "Zalando Sans SemiExpanded", sans-serif;
+}
+
+textarea{
+  background-color:white;
+  width:70%;
+  font-size:20px;
+  padding:16px 16px;
+  border-radius: 10px;
+  border: 2px solid #927DDE;
+  margin-bottom: 25px;
+  font-family: "Zalando Sans SemiExpanded", sans-serif;
+}
+
+input:focus-within {
+  outline:none;
+  border-color:#7A3E6E;
+  border-width:3px;
+}
+
+textarea:focus-within {
+  outline:none;
+  border-color:#7A3E6E;
+  border-width:3px;
+}
+
+button{
+  background-color:#7A3E6E;
+  color:white;
+  border-radius:20px;
+  border: 2px solid #927DDE;
+  font-size:22px;
+  padding: 10px 18px;
+  text-align:center;
+  display:flex;
+  margin:auto;
+  font-family: "Zalando Sans SemiExpanded", sans-serif;
+}
+
+button:hover {
+  opacity: 80%;
+  cursor: pointer;
+}
+
+
+/* --------------------------------------------------
+  FOOTER
+-------------------------------------------------- */
+footer {
+  grid-column: span 12;
+  text-align: center;
+  font-size: 25px;
+  color: #7A3E6E;
+  margin-top: 50px;
+  margin-bottom: 50px;
+}
+
+
+/* --------------------------------------------------
+  IMAGES
+-------------------------------------------------- */
+.meimg {
+  max-width: 500px;
+  padding-top:30px;
+  transition: transform 0.3s ease;
+}
+
+
+.meimg:hover {
+  transform: rotate(-5deg) translateY(-5px);
+}
+
+/* --------------------------------------------------
+  ANIMATIONS + DECORATIVE EFFECTS
+-------------------------------------------------- */
+/* Fancy name */
+.fancy-name {
+  display: inline-block;
+  position: relative;
+  font-size: 86px;
+  font-weight: 500;
+  color: #7A3E6E;
+  animation: fadeUp 1.3s ease both;
+}
+
+/* Fade up */
+@keyframes fadeUp {
+  from {
+      opacity: 0;
+      transform: translateY(22px);
+  }
+  to {
+      opacity: 1;
+      transform: translateY(0);
+  }
+}
+
+/* Underline animation */
+.fancy-name::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  right: 0;
+  margin: auto;
+  bottom: 10px;
+  height: 3px;
+  width: 0%;
+  background-color: #7A3E6E;
+
+  animation: underlineSlide 0.9s ease forwards;
+  animation-delay: 1.3s;
+}
+
+@keyframes underlineSlide {
+  to {
+      width: 100%;
+  }
+}
+
+
+/* --------------------------------------------------
+  UTILITIES
+-------------------------------------------------- */
+.textshadowbox {
+  text-shadow: 2px 2px 2px #000;
+}
